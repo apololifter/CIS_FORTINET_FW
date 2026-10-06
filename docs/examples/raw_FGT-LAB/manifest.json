@@ -1,0 +1,5108 @@
+{
+  "schema_version": "1.0",
+  "run_id": "FGT-LAB_20261006T191939Z",
+  "collector_version": "0.1.0",
+  "vendor": "Fortinet",
+  "platform": "FortiGate / FortiOS",
+  "phase": "collection_only",
+  "started_at_utc": "2026-10-06T19:19:39+00:00",
+  "finished_at_utc": "2026-10-06T19:19:39+00:00",
+  "target": {
+    "label": "FGT-LAB",
+    "host": "192.0.2.1",
+    "port": 443,
+    "api_base": "https://192.0.2.1:443/api/v2",
+    "auth": "REST API admin (Bearer token)"
+  },
+  "collector_host": {
+    "hostname": "AUDITOR-PC",
+    "os": "Windows-11-10.0.26100-SP0",
+    "python": "3.13.14"
+  },
+  "settings": {
+    "verify_ssl": true,
+    "redact_secrets": true,
+    "sections": "all",
+    "excluded": [],
+    "page_size": 10,
+    "vdoms_requested": "auto"
+  },
+  "firewall_identity": {
+    "hostname": "FGT-LAB-01",
+    "model": "FGT60F",
+    "model_name": "FortiGate",
+    "model_number": "60F",
+    "serial": "FGT60FTK00000000",
+    "fortios_version": "v7.4.4",
+    "build": 2662,
+    "firmware": "v7.4.4 build2662",
+    "firewall_http_date": "Tue, 06 Oct 2026 18:30:00 GMT",
+    "timezone": "America/Santiago",
+    "vdom_mode": "multi-vdom"
+  },
+  "vdoms": [
+    "root",
+    "DMZ"
+  ],
+  "endpoints": [
+    {
+      "entity": "monitor/system/status",
+      "section": "firewall",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.179+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/status",
+      "params": {},
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "firewall/monitor.system.status.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/vdom",
+      "section": "firewall",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.180+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/vdom",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "firewall/cmdb.system.vdom.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/global",
+      "section": "firewall",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.181+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/global",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "firewall/cmdb.system.global.json"
+      }
+    },
+    {
+      "entity": "monitor/system/firmware",
+      "section": "firewall",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.182+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/firmware",
+      "params": {},
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "firewall/monitor.system.firmware.json"
+      }
+    },
+    {
+      "entity": "monitor/license/status",
+      "section": "firewall",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.182+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/license/status",
+      "params": {},
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "firewall/monitor.license.status.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/settings",
+      "section": "firewall",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.183+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/settings",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "firewall/root/cmdb.system.settings.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/settings",
+      "section": "firewall",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.183+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/settings",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "firewall/DMZ/cmdb.system.settings.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/fortiguard",
+      "section": "firewall",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.184+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/fortiguard",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "firewall/cmdb.system.fortiguard.json"
+      }
+    },
+    {
+      "entity": "cmdb/system.autoupdate/schedule",
+      "section": "firewall",
+      "scope": "global",
+      "vdom": null,
+      "status": "NOT_SUPPORTED",
+      "record_count": 0,
+      "http_status": 404,
+      "error": null,
+      "note": "HTTP 404: el endpoint no existe en esta versión/modelo o la función no está habilitada",
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.184+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system.autoupdate/schedule",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 0,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "firewall/cmdb.system.autoupdate.schedule.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/admin",
+      "section": "administrators",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 3,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.184+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/admin",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "administrators/cmdb.system.admin.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/accprofile",
+      "section": "administrators",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.185+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/accprofile",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "administrators/cmdb.system.accprofile.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/api-user",
+      "section": "administrators",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.186+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/api-user",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "administrators/cmdb.system.api-user.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/password-policy",
+      "section": "administrators",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.186+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/password-policy",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "administrators/cmdb.system.password-policy.json"
+      }
+    },
+    {
+      "entity": "monitor/system/current-admins",
+      "section": "administrators",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.187+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/current-admins",
+      "params": {},
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "administrators/monitor.system.current-admins.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/local-in-policy",
+      "section": "administration",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.187+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/local-in-policy",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "administration/root/cmdb.firewall.local-in-policy.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/local-in-policy",
+      "section": "administration",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.187+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/local-in-policy",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "administration/DMZ/cmdb.firewall.local-in-policy.json"
+      }
+    },
+    {
+      "entity": "cmdb/system.snmp/sysinfo",
+      "section": "administration",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.188+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system.snmp/sysinfo",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "administration/cmdb.system.snmp.sysinfo.json"
+      }
+    },
+    {
+      "entity": "cmdb/system.snmp/community",
+      "section": "administration",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.188+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system.snmp/community",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "administration/cmdb.system.snmp.community.json"
+      }
+    },
+    {
+      "entity": "cmdb/system.snmp/user",
+      "section": "administration",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.189+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system.snmp/user",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "administration/cmdb.system.snmp.user.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/central-management",
+      "section": "administration",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.189+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/central-management",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "administration/cmdb.system.central-management.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/local",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.189+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/local",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/root/cmdb.user.local.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/local",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.190+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/local",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/DMZ/cmdb.user.local.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/group",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.190+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/group",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/root/cmdb.user.group.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/group",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.191+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/group",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/DMZ/cmdb.user.group.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/ldap",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.191+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/ldap",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/root/cmdb.user.ldap.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/ldap",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.191+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/ldap",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/DMZ/cmdb.user.ldap.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/radius",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.192+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/radius",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/root/cmdb.user.radius.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/radius",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.192+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/radius",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/DMZ/cmdb.user.radius.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/tacacs+",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.193+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/tacacs%2B",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/root/cmdb.user.tacacsplus.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/tacacs+",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.194+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/tacacs%2B",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/DMZ/cmdb.user.tacacsplus.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/saml",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.194+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/saml",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/root/cmdb.user.saml.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/saml",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.194+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/saml",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/DMZ/cmdb.user.saml.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/fortitoken",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.195+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/fortitoken",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/root/cmdb.user.fortitoken.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/fortitoken",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.195+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/fortitoken",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/DMZ/cmdb.user.fortitoken.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/setting",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.196+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/setting",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/root/cmdb.user.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/user/setting",
+      "section": "users",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.196+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/user/setting",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "users/DMZ/cmdb.user.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/interface",
+      "section": "network",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 5,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.196+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/interface",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "network/cmdb.system.interface.json"
+      }
+    },
+    {
+      "entity": "monitor/system/interface",
+      "section": "network",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.197+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/interface",
+      "params": {
+        "include_vlan": "true",
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "network/root/monitor.system.interface.json"
+      }
+    },
+    {
+      "entity": "monitor/system/interface",
+      "section": "network",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.197+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/interface",
+      "params": {
+        "include_vlan": "true",
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "network/DMZ/monitor.system.interface.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/zone",
+      "section": "network",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.198+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/zone",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "network/root/cmdb.system.zone.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/zone",
+      "section": "network",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.198+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/zone",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "network/DMZ/cmdb.system.zone.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/dns",
+      "section": "network",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.198+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/dns",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "network/cmdb.system.dns.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/sdwan",
+      "section": "network",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.199+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/sdwan",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "network/root/cmdb.system.sdwan.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/sdwan",
+      "section": "network",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.199+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/sdwan",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "network/DMZ/cmdb.system.sdwan.json"
+      }
+    },
+    {
+      "entity": "cmdb/router/static",
+      "section": "routing",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.199+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/router/static",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "routing/root/cmdb.router.static.json"
+      }
+    },
+    {
+      "entity": "cmdb/router/static",
+      "section": "routing",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.200+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/router/static",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "routing/DMZ/cmdb.router.static.json"
+      }
+    },
+    {
+      "entity": "cmdb/router/static6",
+      "section": "routing",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.200+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/router/static6",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "routing/root/cmdb.router.static6.json"
+      }
+    },
+    {
+      "entity": "cmdb/router/static6",
+      "section": "routing",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.201+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/router/static6",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "routing/DMZ/cmdb.router.static6.json"
+      }
+    },
+    {
+      "entity": "cmdb/router/policy",
+      "section": "routing",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.201+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/router/policy",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "routing/root/cmdb.router.policy.json"
+      }
+    },
+    {
+      "entity": "cmdb/router/policy",
+      "section": "routing",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.201+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/router/policy",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "routing/DMZ/cmdb.router.policy.json"
+      }
+    },
+    {
+      "entity": "cmdb/router/bgp",
+      "section": "routing",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.202+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/router/bgp",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "routing/root/cmdb.router.bgp.json"
+      }
+    },
+    {
+      "entity": "cmdb/router/bgp",
+      "section": "routing",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.202+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/router/bgp",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "routing/DMZ/cmdb.router.bgp.json"
+      }
+    },
+    {
+      "entity": "cmdb/router/ospf",
+      "section": "routing",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.202+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/router/ospf",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "routing/root/cmdb.router.ospf.json"
+      }
+    },
+    {
+      "entity": "cmdb/router/ospf",
+      "section": "routing",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.203+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/router/ospf",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "routing/DMZ/cmdb.router.ospf.json"
+      }
+    },
+    {
+      "entity": "monitor/router/ipv4",
+      "section": "routing",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.203+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/router/ipv4",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "routing/root/monitor.router.ipv4.json"
+      }
+    },
+    {
+      "entity": "monitor/router/ipv4",
+      "section": "routing",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.203+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/router/ipv4",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "routing/DMZ/monitor.router.ipv4.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/address",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 30,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.204+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/address",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 3,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/root/cmdb.firewall.address.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/address",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 30,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.204+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/address",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 3,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/DMZ/cmdb.firewall.address.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/address6",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.205+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/address6",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/root/cmdb.firewall.address6.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/address6",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.205+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/address6",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/DMZ/cmdb.firewall.address6.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/addrgrp",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.205+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/addrgrp",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/root/cmdb.firewall.addrgrp.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/addrgrp",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.206+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/addrgrp",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/DMZ/cmdb.firewall.addrgrp.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/addrgrp6",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.206+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/addrgrp6",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/root/cmdb.firewall.addrgrp6.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/addrgrp6",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.207+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/addrgrp6",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/DMZ/cmdb.firewall.addrgrp6.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.wildcard-fqdn/custom",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.207+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.wildcard-fqdn/custom",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/root/cmdb.firewall.wildcard-fqdn.custom.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.wildcard-fqdn/custom",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.207+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.wildcard-fqdn/custom",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/DMZ/cmdb.firewall.wildcard-fqdn.custom.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.wildcard-fqdn/group",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.208+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.wildcard-fqdn/group",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/root/cmdb.firewall.wildcard-fqdn.group.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.wildcard-fqdn/group",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.208+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.wildcard-fqdn/group",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/DMZ/cmdb.firewall.wildcard-fqdn.group.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.service/custom",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 12,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.208+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.service/custom",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": "El equipo ignoró start/count; se conservó una sola copia."
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/root/cmdb.firewall.service.custom.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.service/custom",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 12,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.209+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.service/custom",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": "El equipo ignoró start/count; se conservó una sola copia."
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/DMZ/cmdb.firewall.service.custom.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.service/group",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.209+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.service/group",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/root/cmdb.firewall.service.group.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.service/group",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.210+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.service/group",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/DMZ/cmdb.firewall.service.group.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.schedule/recurring",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.210+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.schedule/recurring",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/root/cmdb.firewall.schedule.recurring.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.schedule/recurring",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.211+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.schedule/recurring",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/DMZ/cmdb.firewall.schedule.recurring.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.schedule/onetime",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.211+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.schedule/onetime",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/root/cmdb.firewall.schedule.onetime.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.schedule/onetime",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.212+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.schedule/onetime",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/DMZ/cmdb.firewall.schedule.onetime.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.schedule/group",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.212+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.schedule/group",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/root/cmdb.firewall.schedule.group.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall.schedule/group",
+      "section": "objects",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.213+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall.schedule/group",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "objects/DMZ/cmdb.firewall.schedule.group.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/policy",
+      "section": "firewall_policies",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 4,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.213+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/policy",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "firewall_policies/root/cmdb.firewall.policy.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/policy",
+      "section": "firewall_policies",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.214+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/policy",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "firewall_policies/DMZ/cmdb.firewall.policy.json"
+      }
+    },
+    {
+      "entity": "monitor/firewall/policy",
+      "section": "firewall_policies",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 4,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.214+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/firewall/policy",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "firewall_policies/root/monitor.firewall.policy.json"
+      }
+    },
+    {
+      "entity": "monitor/firewall/policy",
+      "section": "firewall_policies",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 4,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.215+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/firewall/policy",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "firewall_policies/DMZ/monitor.firewall.policy.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/security-policy",
+      "section": "firewall_policies",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.215+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/security-policy",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "firewall_policies/root/cmdb.firewall.security-policy.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/security-policy",
+      "section": "firewall_policies",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.215+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/security-policy",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "firewall_policies/DMZ/cmdb.firewall.security-policy.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/proxy-policy",
+      "section": "firewall_policies",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.216+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/proxy-policy",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "firewall_policies/root/cmdb.firewall.proxy-policy.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/proxy-policy",
+      "section": "firewall_policies",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.216+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/proxy-policy",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "firewall_policies/DMZ/cmdb.firewall.proxy-policy.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/DoS-policy",
+      "section": "firewall_policies",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.216+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/DoS-policy",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "firewall_policies/root/cmdb.firewall.DoS-policy.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/DoS-policy",
+      "section": "firewall_policies",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.217+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/DoS-policy",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "firewall_policies/DMZ/cmdb.firewall.DoS-policy.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/policy6",
+      "section": "firewall_policies",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "NOT_SUPPORTED",
+      "record_count": 0,
+      "http_status": 400,
+      "error": null,
+      "note": "HTTP 400: el endpoint no existe en esta versión/modelo o la función no está habilitada",
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.217+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/policy6",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 0,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "firewall_policies/root/cmdb.firewall.policy6.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/policy6",
+      "section": "firewall_policies",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "NOT_SUPPORTED",
+      "record_count": 0,
+      "http_status": 400,
+      "error": null,
+      "note": "HTTP 400: el endpoint no existe en esta versión/modelo o la función no está habilitada",
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.217+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/policy6",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 0,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "firewall_policies/DMZ/cmdb.firewall.policy6.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/vip",
+      "section": "nat",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.218+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/vip",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "nat/root/cmdb.firewall.vip.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/vip",
+      "section": "nat",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.218+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/vip",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "nat/DMZ/cmdb.firewall.vip.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/vip6",
+      "section": "nat",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.219+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/vip6",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "nat/root/cmdb.firewall.vip6.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/vip6",
+      "section": "nat",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.219+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/vip6",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "nat/DMZ/cmdb.firewall.vip6.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/vipgrp",
+      "section": "nat",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.219+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/vipgrp",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "nat/root/cmdb.firewall.vipgrp.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/vipgrp",
+      "section": "nat",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.220+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/vipgrp",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "nat/DMZ/cmdb.firewall.vipgrp.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/ippool",
+      "section": "nat",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.220+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/ippool",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "nat/root/cmdb.firewall.ippool.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/ippool",
+      "section": "nat",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.220+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/ippool",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "nat/DMZ/cmdb.firewall.ippool.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/central-snat-map",
+      "section": "nat",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.221+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/central-snat-map",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "nat/root/cmdb.firewall.central-snat-map.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/central-snat-map",
+      "section": "nat",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.221+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/central-snat-map",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "nat/DMZ/cmdb.firewall.central-snat-map.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.ipsec/phase1-interface",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.221+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ipsec/phase1-interface",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "vpn/root/cmdb.vpn.ipsec.phase1-interface.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.ipsec/phase1-interface",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.222+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ipsec/phase1-interface",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "vpn/DMZ/cmdb.vpn.ipsec.phase1-interface.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.ipsec/phase2-interface",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.222+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ipsec/phase2-interface",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "vpn/root/cmdb.vpn.ipsec.phase2-interface.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.ipsec/phase2-interface",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.223+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ipsec/phase2-interface",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "vpn/DMZ/cmdb.vpn.ipsec.phase2-interface.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.ipsec/phase1",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.223+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ipsec/phase1",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "vpn/root/cmdb.vpn.ipsec.phase1.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.ipsec/phase1",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.223+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ipsec/phase1",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "vpn/DMZ/cmdb.vpn.ipsec.phase1.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.ipsec/phase2",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.224+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ipsec/phase2",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "vpn/root/cmdb.vpn.ipsec.phase2.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.ipsec/phase2",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.224+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ipsec/phase2",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "vpn/DMZ/cmdb.vpn.ipsec.phase2.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.ssl/settings",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.224+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ssl/settings",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "vpn/root/cmdb.vpn.ssl.settings.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.ssl/settings",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.225+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ssl/settings",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "vpn/DMZ/cmdb.vpn.ssl.settings.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.ssl.web/portal",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.225+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ssl.web/portal",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "vpn/root/cmdb.vpn.ssl.web.portal.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.ssl.web/portal",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.225+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ssl.web/portal",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "vpn/DMZ/cmdb.vpn.ssl.web.portal.json"
+      }
+    },
+    {
+      "entity": "monitor/vpn/ipsec",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.226+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/vpn/ipsec",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "vpn/root/monitor.vpn.ipsec.json"
+      }
+    },
+    {
+      "entity": "monitor/vpn/ipsec",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.226+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/vpn/ipsec",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "vpn/DMZ/monitor.vpn.ipsec.json"
+      }
+    },
+    {
+      "entity": "monitor/vpn/ssl",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.226+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/vpn/ssl",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "vpn/root/monitor.vpn.ssl.json"
+      }
+    },
+    {
+      "entity": "monitor/vpn/ssl",
+      "section": "vpn",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.227+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/vpn/ssl",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "vpn/DMZ/monitor.vpn.ssl.json"
+      }
+    },
+    {
+      "entity": "cmdb/ips/sensor",
+      "section": "ips",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.227+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/ips/sensor",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "ips/root/cmdb.ips.sensor.json"
+      }
+    },
+    {
+      "entity": "cmdb/ips/sensor",
+      "section": "ips",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.228+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/ips/sensor",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "ips/DMZ/cmdb.ips.sensor.json"
+      }
+    },
+    {
+      "entity": "cmdb/ips/global",
+      "section": "ips",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.228+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/ips/global",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "ips/cmdb.ips.global.json"
+      }
+    },
+    {
+      "entity": "cmdb/ips/settings",
+      "section": "ips",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.229+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/ips/settings",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "ips/root/cmdb.ips.settings.json"
+      }
+    },
+    {
+      "entity": "cmdb/ips/settings",
+      "section": "ips",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.229+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/ips/settings",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "ips/DMZ/cmdb.ips.settings.json"
+      }
+    },
+    {
+      "entity": "cmdb/webfilter/profile",
+      "section": "web_filter",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.229+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/webfilter/profile",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "web_filter/root/cmdb.webfilter.profile.json"
+      }
+    },
+    {
+      "entity": "cmdb/webfilter/profile",
+      "section": "web_filter",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.230+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/webfilter/profile",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "web_filter/DMZ/cmdb.webfilter.profile.json"
+      }
+    },
+    {
+      "entity": "cmdb/webfilter/urlfilter",
+      "section": "web_filter",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.230+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/webfilter/urlfilter",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "web_filter/root/cmdb.webfilter.urlfilter.json"
+      }
+    },
+    {
+      "entity": "cmdb/webfilter/urlfilter",
+      "section": "web_filter",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.231+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/webfilter/urlfilter",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "web_filter/DMZ/cmdb.webfilter.urlfilter.json"
+      }
+    },
+    {
+      "entity": "cmdb/webfilter/ftgd-local-cat",
+      "section": "web_filter",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.231+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/webfilter/ftgd-local-cat",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "web_filter/root/cmdb.webfilter.ftgd-local-cat.json"
+      }
+    },
+    {
+      "entity": "cmdb/webfilter/ftgd-local-cat",
+      "section": "web_filter",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.232+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/webfilter/ftgd-local-cat",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "web_filter/DMZ/cmdb.webfilter.ftgd-local-cat.json"
+      }
+    },
+    {
+      "entity": "cmdb/webfilter/ftgd-local-rating",
+      "section": "web_filter",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.232+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/webfilter/ftgd-local-rating",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "web_filter/root/cmdb.webfilter.ftgd-local-rating.json"
+      }
+    },
+    {
+      "entity": "cmdb/webfilter/ftgd-local-rating",
+      "section": "web_filter",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.232+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/webfilter/ftgd-local-rating",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "web_filter/DMZ/cmdb.webfilter.ftgd-local-rating.json"
+      }
+    },
+    {
+      "entity": "cmdb/webfilter/override",
+      "section": "web_filter",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.233+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/webfilter/override",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "web_filter/root/cmdb.webfilter.override.json"
+      }
+    },
+    {
+      "entity": "cmdb/webfilter/override",
+      "section": "web_filter",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.233+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/webfilter/override",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "web_filter/DMZ/cmdb.webfilter.override.json"
+      }
+    },
+    {
+      "entity": "cmdb/dnsfilter/profile",
+      "section": "web_filter",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.234+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/dnsfilter/profile",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "web_filter/root/cmdb.dnsfilter.profile.json"
+      }
+    },
+    {
+      "entity": "cmdb/dnsfilter/profile",
+      "section": "web_filter",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.234+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/dnsfilter/profile",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "web_filter/DMZ/cmdb.dnsfilter.profile.json"
+      }
+    },
+    {
+      "entity": "cmdb/application/list",
+      "section": "application_control",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.234+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/application/list",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "application_control/root/cmdb.application.list.json"
+      }
+    },
+    {
+      "entity": "cmdb/application/list",
+      "section": "application_control",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.235+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/application/list",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "application_control/DMZ/cmdb.application.list.json"
+      }
+    },
+    {
+      "entity": "cmdb/application/group",
+      "section": "application_control",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.235+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/application/group",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "application_control/root/cmdb.application.group.json"
+      }
+    },
+    {
+      "entity": "cmdb/application/group",
+      "section": "application_control",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.236+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/application/group",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "application_control/DMZ/cmdb.application.group.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/ssl-ssh-profile",
+      "section": "ssl_inspection",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.236+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/ssl-ssh-profile",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "ssl_inspection/root/cmdb.firewall.ssl-ssh-profile.json"
+      }
+    },
+    {
+      "entity": "cmdb/firewall/ssl-ssh-profile",
+      "section": "ssl_inspection",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.236+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/ssl-ssh-profile",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "ssl_inspection/DMZ/cmdb.firewall.ssl-ssh-profile.json"
+      }
+    },
+    {
+      "entity": "cmdb/antivirus/profile",
+      "section": "security_profiles",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.237+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/antivirus/profile",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "security_profiles/root/cmdb.antivirus.profile.json"
+      }
+    },
+    {
+      "entity": "cmdb/antivirus/profile",
+      "section": "security_profiles",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.237+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/antivirus/profile",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "security_profiles/DMZ/cmdb.antivirus.profile.json"
+      }
+    },
+    {
+      "entity": "cmdb/antivirus/settings",
+      "section": "security_profiles",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.238+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/antivirus/settings",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "security_profiles/root/cmdb.antivirus.settings.json"
+      }
+    },
+    {
+      "entity": "cmdb/antivirus/settings",
+      "section": "security_profiles",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.238+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/antivirus/settings",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "security_profiles/DMZ/cmdb.antivirus.settings.json"
+      }
+    },
+    {
+      "entity": "cmdb/antivirus/exempt-list",
+      "section": "security_profiles",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.239+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/antivirus/exempt-list",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "security_profiles/root/cmdb.antivirus.exempt-list.json"
+      }
+    },
+    {
+      "entity": "cmdb/antivirus/exempt-list",
+      "section": "security_profiles",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.239+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/antivirus/exempt-list",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "security_profiles/DMZ/cmdb.antivirus.exempt-list.json"
+      }
+    },
+    {
+      "entity": "cmdb/log/setting",
+      "section": "logging",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.239+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log/setting",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/root/cmdb.log.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/log/setting",
+      "section": "logging",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.240+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log/setting",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/DMZ/cmdb.log.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/log/eventfilter",
+      "section": "logging",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.241+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log/eventfilter",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/root/cmdb.log.eventfilter.json"
+      }
+    },
+    {
+      "entity": "cmdb/log/eventfilter",
+      "section": "logging",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.241+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log/eventfilter",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/DMZ/cmdb.log.eventfilter.json"
+      }
+    },
+    {
+      "entity": "cmdb/log.disk/setting",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.242+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.disk/setting",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/cmdb.log.disk.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/log.memory/setting",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.242+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.memory/setting",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/cmdb.log.memory.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/log.fortianalyzer/setting",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.242+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.fortianalyzer/setting",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/cmdb.log.fortianalyzer.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/log.fortianalyzer2/setting",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.243+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.fortianalyzer2/setting",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/cmdb.log.fortianalyzer2.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/log.fortianalyzer3/setting",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.243+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.fortianalyzer3/setting",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/cmdb.log.fortianalyzer3.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/log.fortianalyzer-cloud/setting",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.243+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.fortianalyzer-cloud/setting",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/cmdb.log.fortianalyzer-cloud.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/log.fortianalyzer/filter",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.244+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.fortianalyzer/filter",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/cmdb.log.fortianalyzer.filter.json"
+      }
+    },
+    {
+      "entity": "cmdb/log.syslogd/setting",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.244+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.syslogd/setting",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/cmdb.log.syslogd.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/log.syslogd2/setting",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.244+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.syslogd2/setting",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/cmdb.log.syslogd2.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/log.syslogd3/setting",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.245+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.syslogd3/setting",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/cmdb.log.syslogd3.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/log.syslogd4/setting",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.245+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.syslogd4/setting",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/cmdb.log.syslogd4.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/log.syslogd/filter",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.245+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.syslogd/filter",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "logging/cmdb.log.syslogd.filter.json"
+      }
+    },
+    {
+      "entity": "cmdb/log.fortiguard/setting",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "ERROR",
+      "record_count": null,
+      "http_status": 403,
+      "error": "HTTP 403: error (permiso denegado por el accprofile del REST API admin)",
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.246+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.fortiguard/setting",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 0,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "logging/cmdb.log.fortiguard.setting.json"
+      }
+    },
+    {
+      "entity": "monitor/log/fortianalyzer",
+      "section": "logging",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.246+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/log/fortianalyzer",
+      "params": {},
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "logging/monitor.log.fortianalyzer.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/ntp",
+      "section": "ntp",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.247+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/ntp",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "ntp/cmdb.system.ntp.json"
+      }
+    },
+    {
+      "entity": "monitor/system/ntp/status",
+      "section": "ntp",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.247+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/ntp/status",
+      "params": {},
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "ntp/monitor.system.ntp.status.json"
+      }
+    },
+    {
+      "entity": "monitor/system/config-revision",
+      "section": "backup",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.248+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/config-revision",
+      "params": {},
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "backup/monitor.system.config-revision.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/auto-script",
+      "section": "backup",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.248+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/auto-script",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "backup/cmdb.system.auto-script.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/automation-trigger",
+      "section": "backup",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.249+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/automation-trigger",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "backup/cmdb.system.automation-trigger.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/automation-action",
+      "section": "backup",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.249+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/automation-action",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "backup/cmdb.system.automation-action.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/automation-stitch",
+      "section": "backup",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.249+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/automation-stitch",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "backup/cmdb.system.automation-stitch.json"
+      }
+    },
+    {
+      "entity": "cmdb/system/ha",
+      "section": "ha",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.250+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/ha",
+      "params": {},
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "ha/cmdb.system.ha.json"
+      }
+    },
+    {
+      "entity": "monitor/system/ha-peer",
+      "section": "ha",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.251+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/ha-peer",
+      "params": {},
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "ha/monitor.system.ha-peer.json"
+      }
+    },
+    {
+      "entity": "monitor/system/ha-checksums",
+      "section": "ha",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.251+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/ha-checksums",
+      "params": {},
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "ha/monitor.system.ha-checksums.json"
+      }
+    },
+    {
+      "entity": "monitor/system/ha-statistics",
+      "section": "ha",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.251+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/ha-statistics",
+      "params": {},
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "ha/monitor.system.ha-statistics.json"
+      }
+    },
+    {
+      "entity": "cmdb/certificate/local",
+      "section": "certificates",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.252+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/certificate/local",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "pem:Fortinet_Factory": "certificates/root/cmdb.certificate.local/Fortinet_Factory_ee20d144.pem",
+        "pem:VPN-Public": "certificates/root/cmdb.certificate.local/VPN-Public_fecc28d6.pem",
+        "json": "certificates/root/cmdb.certificate.local.json"
+      }
+    },
+    {
+      "entity": "cmdb/certificate/local",
+      "section": "certificates",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.253+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/certificate/local",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "pem:Fortinet_Factory": "certificates/DMZ/cmdb.certificate.local/Fortinet_Factory_ee20d144.pem",
+        "pem:VPN-Public": "certificates/DMZ/cmdb.certificate.local/VPN-Public_fecc28d6.pem",
+        "json": "certificates/DMZ/cmdb.certificate.local.json"
+      }
+    },
+    {
+      "entity": "cmdb/certificate/ca",
+      "section": "certificates",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.254+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/certificate/ca",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "pem:Fortinet_CA_SSL": "certificates/root/cmdb.certificate.ca/Fortinet_CA_SSL_af85dc3f.pem",
+        "json": "certificates/root/cmdb.certificate.ca.json"
+      }
+    },
+    {
+      "entity": "cmdb/certificate/ca",
+      "section": "certificates",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.255+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/certificate/ca",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "pem:Fortinet_CA_SSL": "certificates/DMZ/cmdb.certificate.ca/Fortinet_CA_SSL_af85dc3f.pem",
+        "json": "certificates/DMZ/cmdb.certificate.ca.json"
+      }
+    },
+    {
+      "entity": "cmdb/certificate/remote",
+      "section": "certificates",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.255+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/certificate/remote",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "certificates/root/cmdb.certificate.remote.json"
+      }
+    },
+    {
+      "entity": "cmdb/certificate/remote",
+      "section": "certificates",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.256+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/certificate/remote",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "certificates/DMZ/cmdb.certificate.remote.json"
+      }
+    },
+    {
+      "entity": "cmdb/certificate/crl",
+      "section": "certificates",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.256+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/certificate/crl",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "certificates/root/cmdb.certificate.crl.json"
+      }
+    },
+    {
+      "entity": "cmdb/certificate/crl",
+      "section": "certificates",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "EMPTY",
+      "record_count": 0,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.256+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/certificate/crl",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "certificates/DMZ/cmdb.certificate.crl.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.certificate/setting",
+      "section": "certificates",
+      "scope": "vdom",
+      "vdom": "root",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.257+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.certificate/setting",
+      "params": {
+        "vdom": "root"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "certificates/root/cmdb.vpn.certificate.setting.json"
+      }
+    },
+    {
+      "entity": "cmdb/vpn.certificate/setting",
+      "section": "certificates",
+      "scope": "vdom",
+      "vdom": "DMZ",
+      "status": "OK",
+      "record_count": 1,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.257+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.certificate/setting",
+      "params": {
+        "vdom": "DMZ"
+      },
+      "pagination": {
+        "enabled": true,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+      "files": {
+        "json": "certificates/DMZ/cmdb.vpn.certificate.setting.json"
+      }
+    },
+    {
+      "entity": "monitor/system/available-certificates",
+      "section": "certificates",
+      "scope": "global",
+      "vdom": null,
+      "status": "OK",
+      "record_count": 2,
+      "http_status": 200,
+      "error": null,
+      "note": null,
+      "visibility": null,
+      "extracted_at_utc": "2026-10-06T19:19:39.258+00:00",
+      "duration_ms": 0,
+      "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/available-certificates",
+      "params": {
+        "scope": "global"
+      },
+      "pagination": {
+        "enabled": false,
+        "pages": 1,
+        "note": null
+      },
+      "config_revision": "NOT_AVAILABLE",
+      "files": {
+        "json": "certificates/monitor.system.available-certificates.json"
+      }
+    }
+  ],
+  "summary": {
+    "requested": 185,
+    "OK": 139,
+    "EMPTY": 42,
+    "RESTRICTED": 0,
+    "NOT_SUPPORTED": 3,
+    "ERROR": 1
+  },
+  "field_sources": {
+    "firewall": {
+      "hostname": "monitor/system/status:results.hostname (también cmdb/system/global:hostname)",
+      "model": "monitor/system/status:results.model / model_name / model_number",
+      "serial": "Sobre de cualquier respuesta: 'serial'",
+      "fortios_version": "Sobre de cualquier respuesta: 'version' (p.ej. v7.4.4)",
+      "firmware_build": "Sobre de cualquier respuesta: 'build' / monitor/system/firmware",
+      "datetime": "Cabecera HTTP 'Date' de la respuesta del firewall",
+      "timezone": "cmdb/system/global:timezone"
+    },
+    "administrators": {
+      "username": "cmdb/system/admin:name / cmdb/system/api-user:name",
+      "role_profile": "cmdb/system/admin:accprofile",
+      "permissions": "cmdb/system/accprofile:* (sysgrp, netgrp, fwgrp, loggrp, vpngrp, utmgrp, authgrp...)",
+      "mfa": "cmdb/system/admin:two-factor (disable/fortitoken/email/sms) + fortitoken",
+      "remote_auth": "cmdb/system/admin:remote-auth / wildcard / remote-group",
+      "status": "cmdb/system/admin (no hay campo de estado: un admin existe o no) / monitor/system/current-admins (sesiones activas)",
+      "last_login": "NOT_AVAILABLE (sólo en logs de eventos; no está en cmdb)"
+    },
+    "administration": {
+      "https_ssh_snmp_per_interface": "cmdb/system/interface:allowaccess",
+      "ports": "cmdb/system/global:admin-sport, admin-port, admin-ssh-port, admin-telnet-port",
+      "admin_tls": "cmdb/system/global:admin-https-ssl-versions / strong-crypto",
+      "trusted_hosts": "cmdb/system/admin:trusthost1..10, ip6-trusthost1..10 / cmdb/system/api-user:trusthost",
+      "local_in_restrictions": "cmdb/firewall/local-in-policy:*",
+      "snmp": "cmdb/system.snmp/sysinfo / community / user"
+    },
+    "network": {
+      "interfaces": "cmdb/system/interface:name, ip (ip + máscara), vdom, type, status, role",
+      "vlans": "cmdb/system/interface:type=vlan, vlanid, interface (padre)",
+      "zones": "cmdb/system/zone:* (+ cmdb/system/interface:role)",
+      "link_status": "monitor/system/interface:link"
+    },
+    "routing": {
+      "static_routes": "cmdb/router/static:dst, gateway, device, distance, status",
+      "active_routes": "monitor/router/ipv4"
+    },
+    "objects": {
+      "addresses": "cmdb/firewall/address:* / address6",
+      "address_groups": "cmdb/firewall/addrgrp:* / addrgrp6",
+      "fqdn": "cmdb/firewall/address:type=fqdn / cmdb/firewall.wildcard-fqdn/*",
+      "services": "cmdb/firewall.service/custom",
+      "service_groups": "cmdb/firewall.service/group"
+    },
+    "firewall_policies": {
+      "id": "cmdb/firewall/policy:policyid",
+      "order": "Orden de la respuesta de cmdb/firewall/policy (orden de evaluación)",
+      "fields": "cmdb/firewall/policy:* (name, srcintf, dstintf, srcaddr, dstaddr, service, action, nat, ippool, poolname, logtraffic, utm-status, ips-sensor, webfilter-profile, application-list, ssl-ssh-profile, av-profile)",
+      "hit_count_last_used": "monitor/firewall/policy"
+    },
+    "nat": {
+      "dnat_vip": "cmdb/firewall/vip:extip (pública), mappedip (interna), extport, mappedport, portforward",
+      "snat": "cmdb/firewall/policy:nat + ippool/poolname / cmdb/firewall/ippool / cmdb/firewall/central-snat-map (si central-nat)"
+    },
+    "vpn": {
+      "ipsec": "cmdb/vpn.ipsec/phase1-interface + phase2-interface (+ phase1/phase2 policy-based)",
+      "ssl_vpn": "cmdb/vpn.ssl/settings + cmdb/vpn.ssl.web/portal",
+      "users_groups": "cmdb/vpn.ssl/settings:authentication-rule / cmdb/user/group / cmdb/user/local / cmdb/vpn.ipsec/phase1-interface:authusrgrp",
+      "allowed_networks": "cmdb/vpn.ssl.web/portal:split-tunneling-routing-address / cmdb/firewall/policy (srcintf=ssl.<vdom> o túnel IPsec) / phase2 selectores",
+      "tunnel_runtime_status": "monitor/vpn/ipsec / monitor/vpn/ssl"
+    },
+    "ips": {
+      "profiles": "cmdb/ips/sensor",
+      "policies": "cmdb/firewall/policy:ips-sensor (+ utm-status)"
+    },
+    "web_filter": {
+      "profiles_categories": "cmdb/webfilter/profile:ftgd-wf",
+      "exceptions": "cmdb/webfilter/urlfilter (action=exempt/allow) / ftgd-local-rating / override",
+      "policies": "cmdb/firewall/policy:webfilter-profile"
+    },
+    "application_control": {
+      "profiles": "cmdb/application/list",
+      "policies": "cmdb/firewall/policy:application-list"
+    },
+    "ssl_inspection": {
+      "profiles": "cmdb/firewall/ssl-ssh-profile",
+      "policies": "cmdb/firewall/policy:ssl-ssh-profile",
+      "exceptions": "cmdb/firewall/ssl-ssh-profile:ssl-exempt"
+    },
+    "logging": {
+      "local": "cmdb/log.disk/setting / log.memory/setting / log/setting / log/eventfilter",
+      "fortianalyzer": "cmdb/log.fortianalyzer{,2,3,-cloud}/setting (+ monitor/log/fortianalyzer)",
+      "fortimanager": "cmdb/system/central-management",
+      "syslog_siem": "cmdb/log.syslogd{,2,3,4}/setting + filter",
+      "per_policy_logging": "cmdb/firewall/policy:logtraffic"
+    },
+    "ntp": {
+      "servers": "cmdb/system/ntp:ntpserver / type",
+      "sync_status": "monitor/system/ntp/status"
+    },
+    "backup": {
+      "on_device_revisions": "monitor/system/config-revision / cmdb/system/global:revision-backup-on-logout",
+      "scheduled_backup": "cmdb/system/auto-script (execute backup ...) / system/automation-* ",
+      "fortimanager_revisions": "cmdb/system/central-management (FortiManager guarda revisiones)",
+      "last_external_backup": "NOT_AVAILABLE (FortiOS no registra backups externos en la API; validar en FortiManager/servidor destino)"
+    },
+    "ha": {
+      "config": "cmdb/system/ha",
+      "members_and_roles": "monitor/system/ha-peer",
+      "sync": "monitor/system/ha-checksums",
+      "statistics": "monitor/system/ha-statistics"
+    },
+    "certificates": {
+      "inventory": "cmdb/certificate/local, ca, remote, crl",
+      "expiration": "monitor/system/available-certificates / se parsea del PEM público guardado (normalizer)",
+      "usage": "cmdb/system/global:admin-server-cert / vpn.ssl/settings:servercert / firewall/ssl-ssh-profile:server-cert / vpn.ipsec/phase1-interface:certificate"
+    },
+    "exceptions": {
+      "web_filter": "cmdb/webfilter/urlfilter (exempt) / webfilter/ftgd-local-rating / webfilter/override",
+      "ssl_inspection": "cmdb/firewall/ssl-ssh-profile:ssl-exempt",
+      "ips": "cmdb/ips/sensor:entries.exempt-ip",
+      "antivirus": "cmdb/antivirus/exempt-list",
+      "policies_without_inspection": "cmdb/firewall/policy (utm-status=disable / sin perfiles)",
+      "trusted_sources": "cmdb/system/admin:trusthost* / system/api-user:trusthost / firewall/local-in-policy",
+      "dos_bypass": "cmdb/firewall/DoS-policy"
+    }
+  },
+  "not_available": [
+    {
+      "section": "administrators",
+      "field": "last_login",
+      "detail": "NOT_AVAILABLE (sólo en logs de eventos; no está en cmdb)"
+    },
+    {
+      "section": "backup",
+      "field": "last_external_backup",
+      "detail": "NOT_AVAILABLE (FortiOS no registra backups externos en la API; validar en FortiManager/servidor destino)"
+    }
+  ],
+  "vdom_discovery": {
+    "source": "cmdb/system/vdom",
+    "found": [
+      "root",
+      "DMZ"
+    ]
+  }
+}

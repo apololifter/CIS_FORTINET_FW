@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------------------
+# FortiGate Collector — configuración de ejemplo
+# Copia este archivo a config/config.yaml (que está en .gitignore) y ajústalo.
+#
+# CREDENCIALES: NO van aquí. El collector se niega a correr si encuentra
+# "password", "api_key", "secret" o "token" en este archivo.
+# Usa variables de entorno o el archivo .env (ver .env.example):
+#   FORTI_FW_API_KEY
+# ---------------------------------------------------------------------------
+
+firewall:
+  label: "CLIENTE-SITIO-FGT01"    # nombre amigable; se usa en el run_id y en la carpeta RAW
+  host: "192.0.2.1"               # IP o FQDN de administración (override: FORTI_FW_HOST)
+  port: 443                       # puerto HTTPS de admin = admin-sport (override: FORTI_FW_PORT)
+  # VDOMs a auditar. Vacío = autodetectar con cmdb/system/vdom (requiere perfil scope global).
+  # Equipo sin VDOMs: deja vacío o usa ["root"].   (override: FORTI_FW_VDOMS=root,DMZ)
+  vdoms: []
+  # verify_ssl:
+  #   true  -> valida con los CA del sistema (recomendado)
+  #   false -> no valida (solo laboratorio; el log lo advierte)
+  #   "C:/ruta/ca_fortigate.pem" -> valida contra el certificado/CA del firewall
+  verify_ssl: true
+
+requests:
+  timeout: 60                     # segundos por petición
+  retries: 2                      # reintentos ante errores de conexión / HTTP 429-503
+  retry_backoff: 2.0              # segundos * número de intento
+  delay_between_requests: 0.3     # pausa entre GET para no cargar el plano de gestión
+  page_size: 1000                 # registros por página en endpoints cmdb (start/count)
+  max_pages: 500                  # tope de seguridad por endpoint (500 x 1000 = 500.000 registros)
+
+output:
+  raw_dir: "data/raw"             # relativo a la raíz del proyecto
+  log_dir: "logs"
+  log_level: "INFO"               # DEBUG para más detalle
+  redact_secrets: true            # reemplaza contraseñas/PSK/secretos por ***REDACTED***
+
+collection:
+  # Secciones a recolectar (vacío = todas):
+  # firewall, administrators, administration, users, network, routing, objects,
+  # firewall_policies, nat, vpn, ips, web_filter, application_control,
+  # ssl_inspection, security_profiles, logging, ntp, backup, ha, certificates
+  sections: []
+  # Endpoints a omitir, con su clave completa (ver --list-entities), p.ej.:
+  #   - "cmdb/firewall/policy6"
+  #   - "monitor/firewall/policy"
+  exclude_entities: []

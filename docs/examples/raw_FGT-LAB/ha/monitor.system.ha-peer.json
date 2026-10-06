@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "entity": "monitor/system/ha-peer",
+    "api": "monitor",
+    "path": "system/ha-peer",
+    "section": "ha",
+    "scope": "global",
+    "vdom": null,
+    "cis_controls": [
+      "11",
+      "12"
+    ],
+    "purpose": "Miembros del cluster: serial, hostname, prioridad, rol",
+    "cli_equivalent": null,
+    "documentation": "https://fndn.fortinet.net (FortiOS REST API Reference) -> monitor system/ha-peer",
+    "best_effort": true,
+    "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/ha-peer",
+    "params": {},
+    "extracted_at_utc": "2026-10-06T19:19:39.251+00:00",
+    "duration_ms": 0,
+    "attempts": 1,
+    "http_status": 200,
+    "content_type": "application/json",
+    "firewall_http_date": "Tue, 06 Oct 2026 18:30:00 GMT",
+    "serial": "FGT60FTK00000000",
+    "fortios_version": "v7.4.4",
+    "build": 2662,
+    "config_revision": "NOT_AVAILABLE",
+    "status": "OK",
+    "record_count": 2,
+    "api_status": "success",
+    "error": null,
+    "note": null,
+    "visibility": null,
+    "secrets_redacted": true,
+    "pagination": {
+      "enabled": false,
+      "pages": 1,
+      "note": null
+    }
+  },
+  "response": {
+    "http_method": "GET",
+    "vdom": "root",
+    "path": "system",
+    "name": "ha-peer",
+    "serial": "FGT60FTK00000000",
+    "version": "v7.4.4",
+    "build": 2662,
+    "status": "success",
+    "http_status": 200,
+    "results": [
+      {
+        "serial_no": "FGT60FTK00000000",
+        "hostname": "FGT-LAB-01",
+        "priority": 200,
+        "vcluster_id": 0
+      },
+      {
+        "serial_no": "FGT60FTK00000001",
+        "hostname": "FGT-LAB-02",
+        "priority": 100,
+        "vcluster_id": 0
+      }
+    ]
+  }
+}

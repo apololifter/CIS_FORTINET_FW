@@ -1,0 +1,196 @@
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | Collector v0.1.0 | run_id=FGT-LAB_20261006T191939Z | firewall=192.0.2.1:443 | endpoints=115 | VDOMs=auto | redacción=ON
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | Login OK | FGT-LAB-01 | FGT60F | serial=FGT60FTK00000000 | FortiOS v7.4.4 build2662
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | VDOMs a auditar: root, DMZ
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [001/185] monitor/system/status                                   OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [002/185] cmdb/system/vdom                                        OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [003/185] cmdb/system/global                                      OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [004/185] monitor/system/firmware                                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [005/185] monitor/license/status                                  OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [006/185] cmdb/system/settings [root]                             OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [007/185] cmdb/system/settings [DMZ]                              OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [008/185] cmdb/system/fortiguard                                  OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [009/185] cmdb/system.autoupdate/schedule                         N/A    HTTP 404: el endpoint no existe en esta versión/modelo o la función no está habilitada
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [010/185] cmdb/system/admin                                       OK     registros=3  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [011/185] cmdb/system/accprofile                                  OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [012/185] cmdb/system/api-user                                    OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [013/185] cmdb/system/password-policy                             OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [014/185] monitor/system/current-admins                           OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [015/185] cmdb/firewall/local-in-policy [root]                    OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [016/185] cmdb/firewall/local-in-policy [DMZ]                     OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [017/185] cmdb/system.snmp/sysinfo                                OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [018/185] cmdb/system.snmp/community                              OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [019/185] cmdb/system.snmp/user                                   OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [020/185] cmdb/system/central-management                          OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [021/185] cmdb/user/local [root]                                  OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [022/185] cmdb/user/local [DMZ]                                   OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [023/185] cmdb/user/group [root]                                  OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [024/185] cmdb/user/group [DMZ]                                   OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [025/185] cmdb/user/ldap [root]                                   OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [026/185] cmdb/user/ldap [DMZ]                                    OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [027/185] cmdb/user/radius [root]                                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [028/185] cmdb/user/radius [DMZ]                                  OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [029/185] cmdb/user/tacacs+ [root]                                VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [030/185] cmdb/user/tacacs+ [DMZ]                                 VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [031/185] cmdb/user/saml [root]                                   VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [032/185] cmdb/user/saml [DMZ]                                    VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [033/185] cmdb/user/fortitoken [root]                             OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [034/185] cmdb/user/fortitoken [DMZ]                              OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [035/185] cmdb/user/setting [root]                                OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [036/185] cmdb/user/setting [DMZ]                                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [037/185] cmdb/system/interface                                   OK     registros=5  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [038/185] monitor/system/interface [root]                         OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [039/185] monitor/system/interface [DMZ]                          OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [040/185] cmdb/system/zone [root]                                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [041/185] cmdb/system/zone [DMZ]                                  OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [042/185] cmdb/system/dns                                         OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [043/185] cmdb/system/sdwan [root]                                OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [044/185] cmdb/system/sdwan [DMZ]                                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [045/185] cmdb/router/static [root]                               OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [046/185] cmdb/router/static [DMZ]                                OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [047/185] cmdb/router/static6 [root]                              VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [048/185] cmdb/router/static6 [DMZ]                               VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [049/185] cmdb/router/policy [root]                               VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [050/185] cmdb/router/policy [DMZ]                                VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [051/185] cmdb/router/bgp [root]                                  OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [052/185] cmdb/router/bgp [DMZ]                                   OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [053/185] cmdb/router/ospf [root]                                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [054/185] cmdb/router/ospf [DMZ]                                  OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [055/185] monitor/router/ipv4 [root]                              OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [056/185] monitor/router/ipv4 [DMZ]                               OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [057/185] cmdb/firewall/address [root]                            OK     registros=30 páginas=3  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [058/185] cmdb/firewall/address [DMZ]                             OK     registros=30 páginas=3  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [059/185] cmdb/firewall/address6 [root]                           VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [060/185] cmdb/firewall/address6 [DMZ]                            VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [061/185] cmdb/firewall/addrgrp [root]                            OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [062/185] cmdb/firewall/addrgrp [DMZ]                             OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [063/185] cmdb/firewall/addrgrp6 [root]                           VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [064/185] cmdb/firewall/addrgrp6 [DMZ]                            VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [065/185] cmdb/firewall.wildcard-fqdn/custom [root]               OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [066/185] cmdb/firewall.wildcard-fqdn/custom [DMZ]                OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [067/185] cmdb/firewall.wildcard-fqdn/group [root]                VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [068/185] cmdb/firewall.wildcard-fqdn/group [DMZ]                 VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [069/185] cmdb/firewall.service/custom [root]                     OK     registros=12  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [070/185] cmdb/firewall.service/custom [DMZ]                      OK     registros=12  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [071/185] cmdb/firewall.service/group [root]                      OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [072/185] cmdb/firewall.service/group [DMZ]                       OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [073/185] cmdb/firewall.schedule/recurring [root]                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [074/185] cmdb/firewall.schedule/recurring [DMZ]                  OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [075/185] cmdb/firewall.schedule/onetime [root]                   OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [076/185] cmdb/firewall.schedule/onetime [DMZ]                    OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [077/185] cmdb/firewall.schedule/group [root]                     VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [078/185] cmdb/firewall.schedule/group [DMZ]                      VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [079/185] cmdb/firewall/policy [root]                             OK     registros=4  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [080/185] cmdb/firewall/policy [DMZ]                              OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [081/185] monitor/firewall/policy [root]                          OK     registros=4  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [082/185] monitor/firewall/policy [DMZ]                           OK     registros=4  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [083/185] cmdb/firewall/security-policy [root]                    VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [084/185] cmdb/firewall/security-policy [DMZ]                     VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [085/185] cmdb/firewall/proxy-policy [root]                       VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [086/185] cmdb/firewall/proxy-policy [DMZ]                        VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [087/185] cmdb/firewall/DoS-policy [root]                         OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [088/185] cmdb/firewall/DoS-policy [DMZ]                          OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [089/185] cmdb/firewall/policy6 [root]                            N/A    HTTP 400: el endpoint no existe en esta versión/modelo o la función no está habilitada
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [090/185] cmdb/firewall/policy6 [DMZ]                             N/A    HTTP 400: el endpoint no existe en esta versión/modelo o la función no está habilitada
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [091/185] cmdb/firewall/vip [root]                                OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [092/185] cmdb/firewall/vip [DMZ]                                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [093/185] cmdb/firewall/vip6 [root]                               VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [094/185] cmdb/firewall/vip6 [DMZ]                                VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [095/185] cmdb/firewall/vipgrp [root]                             VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [096/185] cmdb/firewall/vipgrp [DMZ]                              VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [097/185] cmdb/firewall/ippool [root]                             OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [098/185] cmdb/firewall/ippool [DMZ]                              OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [099/185] cmdb/firewall/central-snat-map [root]                   VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [100/185] cmdb/firewall/central-snat-map [DMZ]                    VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [101/185] cmdb/vpn.ipsec/phase1-interface [root]                  OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [102/185] cmdb/vpn.ipsec/phase1-interface [DMZ]                   OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [103/185] cmdb/vpn.ipsec/phase2-interface [root]                  OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [104/185] cmdb/vpn.ipsec/phase2-interface [DMZ]                   OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [105/185] cmdb/vpn.ipsec/phase1 [root]                            VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [106/185] cmdb/vpn.ipsec/phase1 [DMZ]                             VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [107/185] cmdb/vpn.ipsec/phase2 [root]                            VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [108/185] cmdb/vpn.ipsec/phase2 [DMZ]                             VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [109/185] cmdb/vpn.ssl/settings [root]                            OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [110/185] cmdb/vpn.ssl/settings [DMZ]                             OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [111/185] cmdb/vpn.ssl.web/portal [root]                          OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [112/185] cmdb/vpn.ssl.web/portal [DMZ]                           OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [113/185] monitor/vpn/ipsec [root]                                OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [114/185] monitor/vpn/ipsec [DMZ]                                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [115/185] monitor/vpn/ssl [root]                                  OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [116/185] monitor/vpn/ssl [DMZ]                                   OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [117/185] cmdb/ips/sensor [root]                                  OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [118/185] cmdb/ips/sensor [DMZ]                                   OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [119/185] cmdb/ips/global                                         OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [120/185] cmdb/ips/settings [root]                                OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [121/185] cmdb/ips/settings [DMZ]                                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [122/185] cmdb/webfilter/profile [root]                           OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [123/185] cmdb/webfilter/profile [DMZ]                            OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [124/185] cmdb/webfilter/urlfilter [root]                         OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [125/185] cmdb/webfilter/urlfilter [DMZ]                          OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [126/185] cmdb/webfilter/ftgd-local-cat [root]                    VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [127/185] cmdb/webfilter/ftgd-local-cat [DMZ]                     VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [128/185] cmdb/webfilter/ftgd-local-rating [root]                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [129/185] cmdb/webfilter/ftgd-local-rating [DMZ]                  OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [130/185] cmdb/webfilter/override [root]                          VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [131/185] cmdb/webfilter/override [DMZ]                           VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [132/185] cmdb/dnsfilter/profile [root]                           OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [133/185] cmdb/dnsfilter/profile [DMZ]                            OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [134/185] cmdb/application/list [root]                            OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [135/185] cmdb/application/list [DMZ]                             OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [136/185] cmdb/application/group [root]                           VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [137/185] cmdb/application/group [DMZ]                            VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [138/185] cmdb/firewall/ssl-ssh-profile [root]                    OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [139/185] cmdb/firewall/ssl-ssh-profile [DMZ]                     OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [140/185] cmdb/antivirus/profile [root]                           OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [141/185] cmdb/antivirus/profile [DMZ]                            OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [142/185] cmdb/antivirus/settings [root]                          OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [143/185] cmdb/antivirus/settings [DMZ]                           OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [144/185] cmdb/antivirus/exempt-list [root]                       VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [145/185] cmdb/antivirus/exempt-list [DMZ]                        VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [146/185] cmdb/log/setting [root]                                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [147/185] cmdb/log/setting [DMZ]                                  OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [148/185] cmdb/log/eventfilter [root]                             OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [149/185] cmdb/log/eventfilter [DMZ]                              OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [150/185] cmdb/log.disk/setting                                   OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [151/185] cmdb/log.memory/setting                                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [152/185] cmdb/log.fortianalyzer/setting                          OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [153/185] cmdb/log.fortianalyzer2/setting                         OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [154/185] cmdb/log.fortianalyzer3/setting                         OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [155/185] cmdb/log.fortianalyzer-cloud/setting                    OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [156/185] cmdb/log.fortianalyzer/filter                           OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [157/185] cmdb/log.syslogd/setting                                OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [158/185] cmdb/log.syslogd2/setting                               OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [159/185] cmdb/log.syslogd3/setting                               OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [160/185] cmdb/log.syslogd4/setting                               OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [161/185] cmdb/log.syslogd/filter                                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | WARNING | fortinet_audit.collector | [162/185] cmdb/log.fortiguard/setting                             ERROR  HTTP 403: error (permiso denegado por el accprofile del REST API admin)
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [163/185] monitor/log/fortianalyzer                               OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [164/185] cmdb/system/ntp                                         OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [165/185] monitor/system/ntp/status                               OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [166/185] monitor/system/config-revision                          OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [167/185] cmdb/system/auto-script                                 OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [168/185] cmdb/system/automation-trigger                          OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [169/185] cmdb/system/automation-action                           OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [170/185] cmdb/system/automation-stitch                           OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [171/185] cmdb/system/ha                                          OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [172/185] monitor/system/ha-peer                                  OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [173/185] monitor/system/ha-checksums                             OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [174/185] monitor/system/ha-statistics                            OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [175/185] cmdb/certificate/local [root]                           OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [176/185] cmdb/certificate/local [DMZ]                            OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [177/185] cmdb/certificate/ca [root]                              OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [178/185] cmdb/certificate/ca [DMZ]                               OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [179/185] cmdb/certificate/remote [root]                          VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [180/185] cmdb/certificate/remote [DMZ]                           VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [181/185] cmdb/certificate/crl [root]                             VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [182/185] cmdb/certificate/crl [DMZ]                              VACÍO
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [183/185] cmdb/vpn.certificate/setting [root]                     OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [184/185] cmdb/vpn.certificate/setting [DMZ]                      OK     registros=1  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | [185/185] monitor/system/available-certificates                   OK     registros=2  0ms
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | ------------------------------------------------------------------------------
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | Resumen: 185 consultas | 139 OK | 42 vacías | 0 restringidas | 3 no soportadas | 1 con error
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | Con error: cmdb/log.fortiguard/setting
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | No soportadas en esta versión/modelo: cmdb/firewall/policy6, cmdb/system.autoupdate/schedule
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | No disponibles vía REST API: administrators.last_login, backup.last_external_backup
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | RAW: data/raw/FGT-LAB_20261006T191939Z
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | Manifest: data/raw/FGT-LAB_20261006T191939Z/manifest.json
+2026-10-06T16:19:39-0300 | INFO    | fortinet_audit.collector | Log: logs/collector_FGT-LAB_20261006T191939Z.log

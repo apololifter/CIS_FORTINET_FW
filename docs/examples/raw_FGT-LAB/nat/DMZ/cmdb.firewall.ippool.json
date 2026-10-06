@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "entity": "cmdb/firewall/ippool",
+    "api": "cmdb",
+    "path": "firewall/ippool",
+    "section": "nat",
+    "scope": "vdom",
+    "vdom": "DMZ",
+    "cis_controls": [
+      "4",
+      "12"
+    ],
+    "purpose": "IP pools (SNAT): tipo (overload/one-to-one/fixed-port-range), startip/endip",
+    "cli_equivalent": "config firewall ippool",
+    "documentation": "https://fndn.fortinet.net (FortiOS REST API Reference) -> cmdb firewall/ippool",
+    "best_effort": false,
+    "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/ippool",
+    "params": {
+      "vdom": "DMZ"
+    },
+    "extracted_at_utc": "2026-10-06T19:19:39.220+00:00",
+    "duration_ms": 0,
+    "attempts": 1,
+    "http_status": 200,
+    "content_type": "application/json",
+    "firewall_http_date": "Tue, 06 Oct 2026 18:30:00 GMT",
+    "serial": "FGT60FTK00000000",
+    "fortios_version": "v7.4.4",
+    "build": 2662,
+    "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+    "status": "OK",
+    "record_count": 1,
+    "api_status": "success",
+    "error": null,
+    "note": null,
+    "visibility": null,
+    "secrets_redacted": true,
+    "pagination": {
+      "enabled": true,
+      "pages": 1,
+      "note": null
+    }
+  },
+  "response": {
+    "http_method": "GET",
+    "vdom": "DMZ",
+    "path": "firewall",
+    "name": "ippool",
+    "serial": "FGT60FTK00000000",
+    "version": "v7.4.4",
+    "build": 2662,
+    "status": "success",
+    "http_status": 200,
+    "revision": "f1e2d3c4b5a6978877665544332211aa",
+    "size": 1,
+    "matched_count": 1,
+    "limit_reached": false,
+    "results": [
+      {
+        "name": "POOL-WAN",
+        "type": "overload",
+        "startip": "203.0.113.12",
+        "endip": "203.0.113.12"
+      }
+    ]
+  }
+}

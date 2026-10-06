@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "entity": "cmdb/system/ha",
+    "api": "cmdb",
+    "path": "system/ha",
+    "section": "ha",
+    "scope": "global",
+    "vdom": null,
+    "cis_controls": [
+      "11",
+      "12"
+    ],
+    "purpose": "HA: mode (standalone/a-p/a-a), group-name/id, priority, override, hbdev, monitor, session-pickup, ha-mgmt-interfaces (password redactada)",
+    "cli_equivalent": "config system ha",
+    "documentation": "https://fndn.fortinet.net (FortiOS REST API Reference) -> cmdb system/ha",
+    "best_effort": false,
+    "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/ha",
+    "params": {},
+    "extracted_at_utc": "2026-10-06T19:19:39.250+00:00",
+    "duration_ms": 0,
+    "attempts": 1,
+    "http_status": 200,
+    "content_type": "application/json",
+    "firewall_http_date": "Tue, 06 Oct 2026 18:30:00 GMT",
+    "serial": "FGT60FTK00000000",
+    "fortios_version": "v7.4.4",
+    "build": 2662,
+    "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+    "status": "OK",
+    "record_count": 1,
+    "api_status": "success",
+    "error": null,
+    "note": null,
+    "visibility": null,
+    "secrets_redacted": true,
+    "pagination": {
+      "enabled": true,
+      "pages": 1,
+      "note": null
+    }
+  },
+  "response": {
+    "http_method": "GET",
+    "vdom": "root",
+    "path": "system",
+    "name": "ha",
+    "serial": "FGT60FTK00000000",
+    "version": "v7.4.4",
+    "build": 2662,
+    "status": "success",
+    "http_status": 200,
+    "revision": "f1e2d3c4b5a6978877665544332211aa",
+    "size": 1,
+    "matched_count": 1,
+    "limit_reached": false,
+    "results": {
+      "mode": "a-p",
+      "group-name": "FGT-LAB-HA",
+      "group-id": 10,
+      "priority": 200,
+      "override": "disable",
+      "hbdev": "\"ha\" 50",
+      "session-pickup": "enable",
+      "monitor": "\"wan1\" \"internal\"",
+      "password": "***REDACTED***",
+      "ha-mgmt-status": "disable",
+      "encryption": "disable",
+      "authentication": "disable"
+    }
+  }
+}

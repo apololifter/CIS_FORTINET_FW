@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "entity": "cmdb/vpn.ssl.web/portal",
+    "api": "cmdb",
+    "path": "vpn.ssl.web/portal",
+    "section": "vpn",
+    "scope": "vdom",
+    "vdom": "root",
+    "cis_controls": [
+      "6",
+      "12"
+    ],
+    "purpose": "Portales SSL-VPN: tunnel-mode, split-tunneling + redes permitidas, web-mode, ip-pools",
+    "cli_equivalent": "config vpn ssl web portal",
+    "documentation": "https://fndn.fortinet.net (FortiOS REST API Reference) -> cmdb vpn.ssl.web/portal",
+    "best_effort": true,
+    "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ssl.web/portal",
+    "params": {
+      "vdom": "root"
+    },
+    "extracted_at_utc": "2026-10-06T19:19:39.225+00:00",
+    "duration_ms": 0,
+    "attempts": 1,
+    "http_status": 200,
+    "content_type": "application/json",
+    "firewall_http_date": "Tue, 06 Oct 2026 18:30:00 GMT",
+    "serial": "FGT60FTK00000000",
+    "fortios_version": "v7.4.4",
+    "build": 2662,
+    "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+    "status": "OK",
+    "record_count": 2,
+    "api_status": "success",
+    "error": null,
+    "note": null,
+    "visibility": null,
+    "secrets_redacted": true,
+    "pagination": {
+      "enabled": true,
+      "pages": 1,
+      "note": null
+    }
+  },
+  "response": {
+    "http_method": "GET",
+    "vdom": "root",
+    "path": "vpn.ssl.web",
+    "name": "portal",
+    "serial": "FGT60FTK00000000",
+    "version": "v7.4.4",
+    "build": 2662,
+    "status": "success",
+    "http_status": 200,
+    "revision": "f1e2d3c4b5a6978877665544332211aa",
+    "size": 2,
+    "matched_count": 2,
+    "limit_reached": false,
+    "results": [
+      {
+        "name": "full-access",
+        "tunnel-mode": "enable",
+        "split-tunneling": "enable",
+        "split-tunneling-routing-address": [
+          {
+            "name": "MGMT-Net"
+          }
+        ],
+        "web-mode": "enable",
+        "ip-pools": [
+          {
+            "name": "SSLVPN_TUNNEL_ADDR1"
+          }
+        ]
+      },
+      {
+        "name": "no-access",
+        "tunnel-mode": "disable",
+        "web-mode": "disable"
+      }
+    ]
+  }
+}

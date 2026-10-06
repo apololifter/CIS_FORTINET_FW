@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "entity": "monitor/system/interface",
+    "api": "monitor",
+    "path": "system/interface",
+    "section": "network",
+    "scope": "vdom",
+    "vdom": "DMZ",
+    "cis_controls": [
+      "12"
+    ],
+    "purpose": "Estado en tiempo real de interfaces (link up/down, velocidad, contadores)",
+    "cli_equivalent": null,
+    "documentation": "https://fndn.fortinet.net (FortiOS REST API Reference) -> monitor system/interface",
+    "best_effort": true,
+    "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/interface",
+    "params": {
+      "include_vlan": "true",
+      "vdom": "DMZ"
+    },
+    "extracted_at_utc": "2026-10-06T19:19:39.197+00:00",
+    "duration_ms": 0,
+    "attempts": 1,
+    "http_status": 200,
+    "content_type": "application/json",
+    "firewall_http_date": "Tue, 06 Oct 2026 18:30:00 GMT",
+    "serial": "FGT60FTK00000000",
+    "fortios_version": "v7.4.4",
+    "build": 2662,
+    "config_revision": "NOT_AVAILABLE",
+    "status": "OK",
+    "record_count": 1,
+    "api_status": "success",
+    "error": null,
+    "note": null,
+    "visibility": null,
+    "secrets_redacted": true,
+    "pagination": {
+      "enabled": false,
+      "pages": 1,
+      "note": null
+    }
+  },
+  "response": {
+    "http_method": "GET",
+    "vdom": "DMZ",
+    "path": "system",
+    "name": "interface",
+    "serial": "FGT60FTK00000000",
+    "version": "v7.4.4",
+    "build": 2662,
+    "status": "success",
+    "http_status": 200,
+    "results": {
+      "wan1": {
+        "name": "wan1",
+        "link": true,
+        "speed": 1000,
+        "duplex": 1
+      },
+      "internal": {
+        "name": "internal",
+        "link": true,
+        "speed": 1000,
+        "duplex": 1
+      }
+    }
+  }
+}

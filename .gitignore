@@ -1,0 +1,45 @@
+# --- Credenciales y configuración local (NUNCA a Git) ---
+.env
+.env.*
+!.env.example
+config/config.yaml
+config/*.local.yaml
+*.pem
+*.key
+*.pfx
+*.p12
+*.crt
+!docs/examples/**/*.pem
+
+# --- Datos extraídos de firewalls reales (contienen topología del cliente) ---
+data/raw/*
+data/normalized/*
+reports/*
+logs/*
+!data/raw/.gitkeep
+!data/normalized/.gitkeep
+!reports/.gitkeep
+!logs/.gitkeep
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# --- IDE / SO ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+

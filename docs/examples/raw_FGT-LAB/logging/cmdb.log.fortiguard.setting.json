@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "entity": "cmdb/log.fortiguard/setting",
+    "api": "cmdb",
+    "path": "log.fortiguard/setting",
+    "section": "logging",
+    "scope": "global",
+    "vdom": null,
+    "cis_controls": [
+      "8"
+    ],
+    "purpose": "Envío de logs a FortiGuard Cloud / FortiAnalyzer Cloud",
+    "cli_equivalent": "config log fortiguard setting",
+    "documentation": "https://fndn.fortinet.net (FortiOS REST API Reference) -> cmdb log.fortiguard/setting",
+    "best_effort": true,
+    "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/log.fortiguard/setting",
+    "params": {},
+    "extracted_at_utc": "2026-10-06T19:19:39.246+00:00",
+    "duration_ms": 0,
+    "attempts": 1,
+    "http_status": 403,
+    "content_type": "application/json",
+    "firewall_http_date": "Tue, 06 Oct 2026 18:30:00 GMT",
+    "serial": "FGT60FTK00000000",
+    "fortios_version": "v7.4.4",
+    "build": 2662,
+    "config_revision": "NOT_AVAILABLE",
+    "status": "ERROR",
+    "record_count": null,
+    "api_status": "error",
+    "error": "HTTP 403: error (permiso denegado por el accprofile del REST API admin)",
+    "note": null,
+    "visibility": null,
+    "secrets_redacted": true,
+    "pagination": {
+      "enabled": true,
+      "pages": 0,
+      "note": null
+    }
+  },
+  "response": {
+    "http_method": "GET",
+    "vdom": "root",
+    "path": "log.fortiguard",
+    "name": "setting",
+    "serial": "FGT60FTK00000000",
+    "version": "v7.4.4",
+    "build": 2662,
+    "status": "error",
+    "http_status": 403
+  }
+}

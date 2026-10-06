@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "entity": "cmdb/vpn.ipsec/phase2-interface",
+    "api": "cmdb",
+    "path": "vpn.ipsec/phase2-interface",
+    "section": "vpn",
+    "scope": "vdom",
+    "vdom": "root",
+    "cis_controls": [
+      "6",
+      "12"
+    ],
+    "purpose": "IPsec fase 2: src/dst subnet o selectores, proposal, pfs, dhgrp, keylife",
+    "cli_equivalent": "config vpn ipsec phase2-interface",
+    "documentation": "https://fndn.fortinet.net (FortiOS REST API Reference) -> cmdb vpn.ipsec/phase2-interface",
+    "best_effort": false,
+    "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/vpn.ipsec/phase2-interface",
+    "params": {
+      "vdom": "root"
+    },
+    "extracted_at_utc": "2026-10-06T19:19:39.222+00:00",
+    "duration_ms": 0,
+    "attempts": 1,
+    "http_status": 200,
+    "content_type": "application/json",
+    "firewall_http_date": "Tue, 06 Oct 2026 18:30:00 GMT",
+    "serial": "FGT60FTK00000000",
+    "fortios_version": "v7.4.4",
+    "build": 2662,
+    "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+    "status": "OK",
+    "record_count": 1,
+    "api_status": "success",
+    "error": null,
+    "note": null,
+    "visibility": null,
+    "secrets_redacted": true,
+    "pagination": {
+      "enabled": true,
+      "pages": 1,
+      "note": null
+    }
+  },
+  "response": {
+    "http_method": "GET",
+    "vdom": "root",
+    "path": "vpn.ipsec",
+    "name": "phase2-interface",
+    "serial": "FGT60FTK00000000",
+    "version": "v7.4.4",
+    "build": 2662,
+    "status": "success",
+    "http_status": 200,
+    "revision": "f1e2d3c4b5a6978877665544332211aa",
+    "size": 1,
+    "matched_count": 1,
+    "limit_reached": false,
+    "results": [
+      {
+        "name": "S2S-Sucursal-p2",
+        "phase1name": "S2S-Sucursal",
+        "proposal": "aes256-sha256",
+        "pfs": "enable",
+        "dhgrp": "14",
+        "src-subnet": "192.0.2.0 255.255.255.0",
+        "dst-subnet": "198.51.100.0 255.255.255.0",
+        "keylifeseconds": 43200
+      }
+    ]
+  }
+}

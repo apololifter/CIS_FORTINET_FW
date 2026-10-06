@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "entity": "cmdb/firewall/address",
+    "api": "cmdb",
+    "path": "firewall/address",
+    "section": "objects",
+    "scope": "vdom",
+    "vdom": "DMZ",
+    "cis_controls": [
+      "12",
+      "13"
+    ],
+    "purpose": "Address objects IPv4: subnet, iprange, fqdn, geography, wildcard, dynamic",
+    "cli_equivalent": "config firewall address",
+    "documentation": "https://fndn.fortinet.net (FortiOS REST API Reference) -> cmdb firewall/address",
+    "best_effort": false,
+    "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/address",
+    "params": {
+      "vdom": "DMZ"
+    },
+    "extracted_at_utc": "2026-10-06T19:19:39.204+00:00",
+    "duration_ms": 0,
+    "attempts": 4,
+    "http_status": 200,
+    "content_type": "application/json",
+    "firewall_http_date": "Tue, 06 Oct 2026 18:30:00 GMT",
+    "serial": "FGT60FTK00000000",
+    "fortios_version": "v7.4.4",
+    "build": 2662,
+    "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+    "status": "OK",
+    "record_count": 30,
+    "api_status": "success",
+    "error": null,
+    "note": null,
+    "visibility": null,
+    "secrets_redacted": true,
+    "pagination": {
+      "enabled": true,
+      "pages": 3,
+      "note": null
+    }
+  },
+  "response": {
+    "http_method": "GET",
+    "vdom": "DMZ",
+    "path": "firewall",
+    "name": "address",
+    "serial": "FGT60FTK00000000",
+    "version": "v7.4.4",
+    "build": 2662,
+    "status": "success",
+    "http_status": 200,
+    "revision": "f1e2d3c4b5a6978877665544332211aa",
+    "size": 30,
+    "matched_count": 30,
+    "limit_reached": false,
+    "results": [
+      {
+        "name": "all",
+        "type": "ipmask",
+        "subnet": "0.0.0.0 0.0.0.0"
+      },
+      {
+        "name": "MGMT-Net",
+        "type": "ipmask",
+        "subnet": "192.0.2.0 255.255.255.0",
+        "comment": "Gestión"
+      },
+      {
+        "name": "FQDN-updates",
+        "type": "fqdn",
+        "fqdn": "update.example.com"
+      },
+      {
+        "name": "Geo-CL",
+        "type": "geography",
+        "country": "CL"
+      },
+      {
+        "name": "SSLVPN_TUNNEL_ADDR1",
+        "type": "iprange",
+        "start-ip": "10.212.134.200",
+        "end-ip": "10.212.134.210"
+      },
+      {
+        "name": "SRV-001",
+        "type": "ipmask",
+        "subnet": "198.51.100.2 255.255.255.255"
+      },
+      {
+        "name": "SRV-002",
+        "type": "ipmask",
+        "subnet": "198.51.100.3 255.255.255.255"
+      },
+      {
+        "name": "SRV-003",
+        "type": "ipmask",
+        "subnet": "198.51.100.4 255.255.255.255"
+      },
+      {
+        "name": "SRV-004",
+        "type": "ipmask",
+        "subnet": "198.51.100.5 255.255.255.255"
+      },
+      {
+        "name": "SRV-005",
+        "type": "ipmask",
+        "subnet": "198.51.100.6 255.255.255.255"
+      },
+      {
+        "name": "SRV-006",
+        "type": "ipmask",
+        "subnet": "198.51.100.7 255.255.255.255"
+      },
+      {
+        "name": "SRV-007",
+        "type": "ipmask",
+        "subnet": "198.51.100.8 255.255.255.255"
+      },
+      {
+        "name": "SRV-008",
+        "type": "ipmask",
+        "subnet": "198.51.100.9 255.255.255.255"
+      },
+      {
+        "name": "SRV-009",
+        "type": "ipmask",
+        "subnet": "198.51.100.10 255.255.255.255"
+      },
+      {
+        "name": "SRV-010",
+        "type": "ipmask",
+        "subnet": "198.51.100.11 255.255.255.255"
+      },
+      {
+        "name": "SRV-011",
+        "type": "ipmask",
+        "subnet": "198.51.100.12 255.255.255.255"
+      },
+      {
+        "name": "SRV-012",
+        "type": "ipmask",
+        "subnet": "198.51.100.13 255.255.255.255"
+      },
+      {
+        "name": "SRV-013",
+        "type": "ipmask",
+        "subnet": "198.51.100.14 255.255.255.255"
+      },
+      {
+        "name": "SRV-014",
+        "type": "ipmask",
+        "subnet": "198.51.100.15 255.255.255.255"
+      },
+      {
+        "name": "SRV-015",
+        "type": "ipmask",
+        "subnet": "198.51.100.16 255.255.255.255"
+      },
+      {
+        "name": "SRV-016",
+        "type": "ipmask",
+        "subnet": "198.51.100.17 255.255.255.255"
+      },
+      {
+        "name": "SRV-017",
+        "type": "ipmask",
+        "subnet": "198.51.100.18 255.255.255.255"
+      },
+      {
+        "name": "SRV-018",
+        "type": "ipmask",
+        "subnet": "198.51.100.19 255.255.255.255"
+      },
+      {
+        "name": "SRV-019",
+        "type": "ipmask",
+        "subnet": "198.51.100.20 255.255.255.255"
+      },
+      {
+        "name": "SRV-020",
+        "type": "ipmask",
+        "subnet": "198.51.100.21 255.255.255.255"
+      },
+      {
+        "name": "SRV-021",
+        "type": "ipmask",
+        "subnet": "198.51.100.22 255.255.255.255"
+      },
+      {
+        "name": "SRV-022",
+        "type": "ipmask",
+        "subnet": "198.51.100.23 255.255.255.255"
+      },
+      {
+        "name": "SRV-023",
+        "type": "ipmask",
+        "subnet": "198.51.100.24 255.255.255.255"
+      },
+      {
+        "name": "SRV-024",
+        "type": "ipmask",
+        "subnet": "198.51.100.25 255.255.255.255"
+      },
+      {
+        "name": "SRV-025",
+        "type": "ipmask",
+        "subnet": "198.51.100.26 255.255.255.255"
+      }
+    ]
+  }
+}

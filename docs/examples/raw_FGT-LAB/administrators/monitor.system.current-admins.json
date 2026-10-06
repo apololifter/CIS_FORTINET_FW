@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "entity": "monitor/system/current-admins",
+    "api": "monitor",
+    "path": "system/current-admins",
+    "section": "administrators",
+    "scope": "global",
+    "vdom": null,
+    "cis_controls": [
+      "5",
+      "8"
+    ],
+    "purpose": "Sesiones de administración activas al momento de la extracción",
+    "cli_equivalent": null,
+    "documentation": "https://fndn.fortinet.net (FortiOS REST API Reference) -> monitor system/current-admins",
+    "best_effort": true,
+    "endpoint": "GET https://192.0.2.1:443/api/v2/monitor/system/current-admins",
+    "params": {},
+    "extracted_at_utc": "2026-10-06T19:19:39.187+00:00",
+    "duration_ms": 0,
+    "attempts": 1,
+    "http_status": 200,
+    "content_type": "application/json",
+    "firewall_http_date": "Tue, 06 Oct 2026 18:30:00 GMT",
+    "serial": "FGT60FTK00000000",
+    "fortios_version": "v7.4.4",
+    "build": 2662,
+    "config_revision": "NOT_AVAILABLE",
+    "status": "OK",
+    "record_count": 1,
+    "api_status": "success",
+    "error": null,
+    "note": null,
+    "visibility": null,
+    "secrets_redacted": true,
+    "pagination": {
+      "enabled": false,
+      "pages": 1,
+      "note": null
+    }
+  },
+  "response": {
+    "http_method": "GET",
+    "vdom": "root",
+    "path": "system",
+    "name": "current-admins",
+    "serial": "FGT60FTK00000000",
+    "version": "v7.4.4",
+    "build": 2662,
+    "status": "success",
+    "http_status": 200,
+    "results": [
+      {
+        "admin": "api_audit",
+        "from": "192.0.2.10",
+        "profile": "ro_audit",
+        "method": "https",
+        "login_time": 1791315000
+      }
+    ]
+  }
+}

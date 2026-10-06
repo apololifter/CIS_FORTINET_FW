@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "entity": "cmdb/ips/sensor",
+    "api": "cmdb",
+    "path": "ips/sensor",
+    "section": "ips",
+    "scope": "vdom",
+    "vdom": "root",
+    "cis_controls": [
+      "13"
+    ],
+    "purpose": "Sensores IPS: entries (severidad, OS, acción, status), exempt-ip, block-malicious-url",
+    "cli_equivalent": "config ips sensor",
+    "documentation": "https://fndn.fortinet.net (FortiOS REST API Reference) -> cmdb ips/sensor",
+    "best_effort": false,
+    "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/ips/sensor",
+    "params": {
+      "vdom": "root"
+    },
+    "extracted_at_utc": "2026-10-06T19:19:39.227+00:00",
+    "duration_ms": 0,
+    "attempts": 1,
+    "http_status": 200,
+    "content_type": "application/json",
+    "firewall_http_date": "Tue, 06 Oct 2026 18:30:00 GMT",
+    "serial": "FGT60FTK00000000",
+    "fortios_version": "v7.4.4",
+    "build": 2662,
+    "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+    "status": "OK",
+    "record_count": 2,
+    "api_status": "success",
+    "error": null,
+    "note": null,
+    "visibility": null,
+    "secrets_redacted": true,
+    "pagination": {
+      "enabled": true,
+      "pages": 1,
+      "note": null
+    }
+  },
+  "response": {
+    "http_method": "GET",
+    "vdom": "root",
+    "path": "ips",
+    "name": "sensor",
+    "serial": "FGT60FTK00000000",
+    "version": "v7.4.4",
+    "build": 2662,
+    "status": "success",
+    "http_status": 200,
+    "revision": "f1e2d3c4b5a6978877665544332211aa",
+    "size": 2,
+    "matched_count": 2,
+    "limit_reached": false,
+    "results": [
+      {
+        "name": "default",
+        "block-malicious-url": "disable",
+        "entries": [
+          {
+            "id": 1,
+            "severity": "medium high critical",
+            "status": "default",
+            "action": "default",
+            "exempt-ip": []
+          }
+        ]
+      },
+      {
+        "name": "protect_http_server",
+        "block-malicious-url": "enable",
+        "entries": [
+          {
+            "id": 1,
+            "location": "server",
+            "severity": "high critical",
+            "action": "block",
+            "exempt-ip": [
+              {
+                "id": 1,
+                "src-ip": "192.0.2.15 255.255.255.255",
+                "dst-ip": "0.0.0.0 0.0.0.0"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

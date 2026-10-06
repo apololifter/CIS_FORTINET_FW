@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "entity": "cmdb/firewall/policy",
+    "api": "cmdb",
+    "path": "firewall/policy",
+    "section": "firewall_policies",
+    "scope": "vdom",
+    "vdom": "root",
+    "cis_controls": [
+      "4",
+      "8",
+      "12",
+      "13"
+    ],
+    "purpose": "Políticas: policyid, name, status, srcintf/dstintf, srcaddr/dstaddr (+negate), service, action, schedule, nat/ippool/poolname, logtraffic/logtraffic-start, utm-status, av-profile, ips-sensor, webfilter-profile, application-list, ssl-ssh-profile, dnsfilter-profile, users/groups, comments; el orden de la respuesta = orden de evaluación",
+    "cli_equivalent": "config firewall policy",
+    "documentation": "https://fndn.fortinet.net (FortiOS REST API Reference) -> cmdb firewall/policy",
+    "best_effort": false,
+    "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/firewall/policy",
+    "params": {
+      "vdom": "root"
+    },
+    "extracted_at_utc": "2026-10-06T19:19:39.213+00:00",
+    "duration_ms": 0,
+    "attempts": 1,
+    "http_status": 200,
+    "content_type": "application/json",
+    "firewall_http_date": "Tue, 06 Oct 2026 18:30:00 GMT",
+    "serial": "FGT60FTK00000000",
+    "fortios_version": "v7.4.4",
+    "build": 2662,
+    "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+    "status": "OK",
+    "record_count": 4,
+    "api_status": "success",
+    "error": null,
+    "note": null,
+    "visibility": null,
+    "secrets_redacted": true,
+    "pagination": {
+      "enabled": true,
+      "pages": 1,
+      "note": null
+    }
+  },
+  "response": {
+    "http_method": "GET",
+    "vdom": "root",
+    "path": "firewall",
+    "name": "policy",
+    "serial": "FGT60FTK00000000",
+    "version": "v7.4.4",
+    "build": 2662,
+    "status": "success",
+    "http_status": 200,
+    "revision": "f1e2d3c4b5a6978877665544332211aa",
+    "size": 4,
+    "matched_count": 4,
+    "limit_reached": false,
+    "results": [
+      {
+        "policyid": 1,
+        "name": "LAN-to-Internet",
+        "uuid": "00000000-0000-0000-0000-000000000001",
+        "status": "enable",
+        "srcintf": [
+          {
+            "name": "internal"
+          }
+        ],
+        "dstintf": [
+          {
+            "name": "wan1"
+          }
+        ],
+        "srcaddr": [
+          {
+            "name": "all"
+          }
+        ],
+        "dstaddr": [
+          {
+            "name": "all"
+          }
+        ],
+        "srcaddr-negate": "disable",
+        "service": [
+          {
+            "name": "ALL"
+          }
+        ],
+        "action": "accept",
+        "schedule": "always",
+        "nat": "enable",
+        "ippool": "disable",
+        "poolname": [],
+        "logtraffic": "all",
+        "logtraffic-start": "disable",
+        "utm-status": "enable",
+        "inspection-mode": "flow",
+        "av-profile": "default",
+        "ips-sensor": "default",
+        "webfilter-profile": "default",
+        "application-list": "default",
+        "dnsfilter-profile": "default",
+        "ssl-ssh-profile": "certificate-inspection",
+        "groups": [],
+        "users": [],
+        "comments": ""
+      },
+      {
+        "policyid": 2,
+        "name": "Publicar-Web",
+        "uuid": "00000000-0000-0000-0000-000000000002",
+        "status": "enable",
+        "srcintf": [
+          {
+            "name": "wan1"
+          }
+        ],
+        "dstintf": [
+          {
+            "name": "internal"
+          }
+        ],
+        "srcaddr": [
+          {
+            "name": "all"
+          }
+        ],
+        "dstaddr": [
+          {
+            "name": "VIP-WEB"
+          }
+        ],
+        "service": [
+          {
+            "name": "HTTPS"
+          }
+        ],
+        "action": "accept",
+        "schedule": "always",
+        "nat": "disable",
+        "logtraffic": "all",
+        "utm-status": "enable",
+        "ips-sensor": "protect_http_server",
+        "ssl-ssh-profile": "deep-inspection",
+        "comments": "Servidor web publicado"
+      },
+      {
+        "policyid": 3,
+        "name": "Any-Any-Temp",
+        "uuid": "00000000-0000-0000-0000-000000000003",
+        "status": "disable",
+        "srcintf": [
+          {
+            "name": "any"
+          }
+        ],
+        "dstintf": [
+          {
+            "name": "any"
+          }
+        ],
+        "srcaddr": [
+          {
+            "name": "all"
+          }
+        ],
+        "dstaddr": [
+          {
+            "name": "all"
+          }
+        ],
+        "service": [
+          {
+            "name": "ALL"
+          }
+        ],
+        "action": "accept",
+        "schedule": "Temp-Proveedor",
+        "nat": "disable",
+        "logtraffic": "disable",
+        "utm-status": "disable",
+        "comments": "Temporal soporte proveedor"
+      },
+      {
+        "policyid": 4,
+        "name": "SSLVPN-to-LAN",
+        "uuid": "00000000-0000-0000-0000-000000000004",
+        "status": "enable",
+        "srcintf": [
+          {
+            "name": "ssl.root"
+          }
+        ],
+        "dstintf": [
+          {
+            "name": "internal"
+          }
+        ],
+        "srcaddr": [
+          {
+            "name": "SSLVPN_TUNNEL_ADDR1"
+          }
+        ],
+        "dstaddr": [
+          {
+            "name": "MGMT-Net"
+          }
+        ],
+        "groups": [
+          {
+            "name": "VPN-Users"
+          }
+        ],
+        "service": [
+          {
+            "name": "ALL"
+          }
+        ],
+        "action": "accept",
+        "schedule": "always",
+        "nat": "disable",
+        "logtraffic": "all",
+        "utm-status": "disable"
+      }
+    ]
+  }
+}

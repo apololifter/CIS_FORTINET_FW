@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "entity": "cmdb/system/automation-trigger",
+    "api": "cmdb",
+    "path": "system/automation-trigger",
+    "section": "backup",
+    "scope": "global",
+    "vdom": null,
+    "cis_controls": [
+      "8",
+      "11"
+    ],
+    "purpose": "Automation stitches - triggers (programados, por evento)",
+    "cli_equivalent": "config system automation-trigger",
+    "documentation": "https://fndn.fortinet.net (FortiOS REST API Reference) -> cmdb system/automation-trigger",
+    "best_effort": false,
+    "endpoint": "GET https://192.0.2.1:443/api/v2/cmdb/system/automation-trigger",
+    "params": {},
+    "extracted_at_utc": "2026-10-06T19:19:39.249+00:00",
+    "duration_ms": 0,
+    "attempts": 1,
+    "http_status": 200,
+    "content_type": "application/json",
+    "firewall_http_date": "Tue, 06 Oct 2026 18:30:00 GMT",
+    "serial": "FGT60FTK00000000",
+    "fortios_version": "v7.4.4",
+    "build": 2662,
+    "config_revision": "f1e2d3c4b5a6978877665544332211aa",
+    "status": "OK",
+    "record_count": 1,
+    "api_status": "success",
+    "error": null,
+    "note": null,
+    "visibility": null,
+    "secrets_redacted": true,
+    "pagination": {
+      "enabled": true,
+      "pages": 1,
+      "note": null
+    }
+  },
+  "response": {
+    "http_method": "GET",
+    "vdom": "root",
+    "path": "system",
+    "name": "automation-trigger",
+    "serial": "FGT60FTK00000000",
+    "version": "v7.4.4",
+    "build": 2662,
+    "status": "success",
+    "http_status": 200,
+    "revision": "f1e2d3c4b5a6978877665544332211aa",
+    "size": 1,
+    "matched_count": 1,
+    "limit_reached": false,
+    "results": [
+      {
+        "name": "Semanal-Domingo",
+        "trigger-type": "scheduled",
+        "trigger-frequency": "weekly",
+        "trigger-weekday": "sunday",
+        "trigger-hour": 2
+      }
+    ]
+  }
+}
